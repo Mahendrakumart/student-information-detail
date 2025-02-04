@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password -Student Information System </title>
+    <link rel="stylesheet" href="change.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h1>Student Information System</h1>
+        </div>
+        <form id="changePasswordForm" action="change.php" method="POST">
+            <h2>Change Password</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="oldPassword">Current Password</label>
+                <input type="password" id="oldPassword" name="oldpassword" required>
+            </div>
+            <div class="form-group">
+                <label for="newPassword"> New Password</label>
+                <input type="password" id="confirmPassword" name="newpassword" required>
+            </div>
+            <button type="submit">Change Password</button>
+        </form>
+        <div class="back-link">
+            <p><a href="login.html">Back to Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .left-section {
+            flex: 1;
+            background-color: #091A5C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .welcome-banner h1 {
+            color: #FFD700;
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .welcome-banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            background-color: #fff;
+        }
+
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .login-form h2 {
+            color: #091A5C;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center; 
+        }
+
+        .login-form p {
+            color: #6B7280;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-form label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .options a {
+            color: #042194;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn-signin {
+            width: 100%;
+            padding: 12px;
+            background-color: #091A5C;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-signin:hover {
+            background-color: #0056B3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="welcome-banner">
+                <h1></h1>
+                <img src="http://localhost/lo.png" width="100%">
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="login-form">
+                <h2>Welcome</h2>
+                <p>Please, input your valid Roll No and Password</p>
+                <form action="ash.php" method="post">
+                    <label for="username">Roll No</label>
+                    <input type="username" id="username" name="username" placeholder="" required>
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password"  name="password" placeholder="" required>
+                    
+                    <div class="options">
+                        <a href="change.html">Change Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-signin">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
